@@ -26,6 +26,9 @@ import moment from 'moment';
 |---------------------|-----|-----|-------|
 | defaultValue        | 默认时间 | [moment](http://momentjs.com/) | 无 |
 | value               | 当前时间 | [moment](http://momentjs.com/) | 无 |
+| open                | 面板是否打开 | boolean | false |
+| onOpen              | 面板打开时的回调 | ({ open: boolean }): void | 无 |
+| onClose             | 面板关闭时的回调 | ({ open: boolean }): void | 无 |
 | placeholder         | 没有值的时候显示的内容 | string | "请选择时间" |
 | onChange            | 时间发生变化的回调     | function(time: moment, timeString: string): void | 无 |
 | format              | 展示的时间格式 | string | "HH:mm:ss" |
